@@ -1,8 +1,58 @@
 %%==================================================================%%
 %%                 Métodos de Desarrollo - Test de Git              %%
 %%==================================================================%%
-%% Alumno (Apellidos, Nombre):                                      %%
+%% Alumno (Apellidos, Nombre): Carbayo Fernández, Miguel            %%
 %%==================================================================%%
 
- Paso   Acción                       Notas
+Para la realización de esta prueba se ha usado el programa GitKraken.
+
+ Paso   Acción                      Notas
 ====== ============================ ================================
+ (1)	clone https://github.com/
+	latacita/
+	testGit2020miguelcarbayo
+ (2)	click derecho en la rama master 
+	-> create branch here 
+	-> escribimos "DatosPersonales"
+	-> se cambia automáticamente
+	a dicha rama
+ (3)
+ (4)
+ (5)	añadimos el archivo 
+	PlanVacunacion.txt al staging 
+	(add)
+	escribimos el mensaje 
+	"Paso 05" y pulsamos en
+	commit (commit -m "Paso 05")
+ (6)	reflog para localizar el id	Al ejecutar estos pasos se vuelve al estado inicial
+	del commit			de la rama según se creó.
+	reset -hard id
+	
+	click derecho en el commit	Pero surge un conflicto ya que el archivo PlanVacunacion.txt
+	-> cherry pick commit		Si se quisiera volver a un commit también se
+					podría hacer con un cherry-pick al mismo id.
+					ha sido modificado y en el commit anterior no estaba
+					modificado. 
+ (7)	create branch here desde
+	DatosPersonales o master
+ (8)	crear el archivo
+ (9)	add + commit
+ (10)	doble click en la rama master
+ (11)	click derecho sobre DatosPersonales
+	-> push
+ (12)					Pueden realizarse por ff porque el HEAD de DatosPersonales
+					está en el mismo punto que master y por lo tanto
+					se pueden hacer los pasos que hace el ff ya que puede introducir
+					todos los commits realizados en Antecedentes uno tras otro.
+ (13)
+ (14)	estando en la rama Antecedentes		En este apartado me confundido y he hecho un 
+	click derecho				fast forward master into Antecedentes y ahora mismo no estoy
+	-> fast forward Antecedentes 		seguro de cómo volver atrás. No deberían surgir conflictos.
+	into master				
+ (15)	mismos pasos que en (14) pero		No surgen conflictos.
+	desde la rama DatosPersonales
+ (16)
+ (17)	en la rama master
+	click derecho -> create tag here
+ (18)	push origin
+ (19)	add + commit + push
